@@ -35,7 +35,14 @@ footer p {
     display: flex;
     justify-content: center;
 }
+.social {
+    display: flex;
+    justify-content: space-around;
+}
 
+.social a:hover{
+    background-color: blue;
+}
 footer span{
     display: flex;
     justify-content: center;
