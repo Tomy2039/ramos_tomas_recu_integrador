@@ -31,6 +31,15 @@ footer {
     padding: 1em;
 }
 
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+footer span{
+    display: flex;
+    justify-content: center;
+}
 header {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
