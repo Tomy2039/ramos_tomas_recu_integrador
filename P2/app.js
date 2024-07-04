@@ -36,6 +36,26 @@ app.post("/students", (req, res) => {
     res.json(estudiantes);
 })
 
+//editar estudiantes
+app.put("/students/:id", (req, res) =>{
+    const id = +req.params.id;
+    const {fullName, age, curse} = req.body;
+    const estudianteId = estudiantes.findIndex(e => e.id === id);
+
+    estudiantes[estudianteId].fullName = fullName;
+    estudiantes[estudianteId].age = age;
+    estudiantes[estudianteId].curse = curse;
+
+    res.json(estudiantes);
+})
+
+//Eliminar estudiantes
+app.delete("/students/:id", (req, res) =>{
+    const id = +req.params.id;
+    const estudianteId = estudiantes.findIndex(e => e.id === id);
+    estudiantes.splice(estudianteId, 1);
+    res.json(estudiantes);
+})
 //servidor
 app.listen(app.get("port"), () => {
     console.log(`el servidor esta funcionando en el puerto ${app.get("port")}`);
