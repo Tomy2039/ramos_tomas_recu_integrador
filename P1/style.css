@@ -11,6 +11,18 @@ aside {
     padding: 1em;
 }
 
+.navbar a {
+    color:#333;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar a:hover{
+    background-color: blue;
+    color: #fff;
+}
 footer {
     grid-column: 1 / -1;
     grid-row: -1 / -1;
