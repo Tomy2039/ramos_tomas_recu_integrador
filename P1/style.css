@@ -41,6 +41,9 @@ nav ul {
     align-items: center;
 }
 
+nav a:hover{
+    background-color: blue;
+}
 main {
     grid-column: 3 / -1;
     grid-row: 2 / -2;
